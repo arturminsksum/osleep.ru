@@ -1,0 +1,168 @@
+mixin cart-prod(o)
+    // begin container-int
+    .container.container-int
+      // begin left-container
+      .left-container
+        // begin breadcrumb
+        +bx-breadcrumb()
+        // end breadcrumb
+        // begin card-prod
+        .card-prod
+          .card-prod__slider
+            .slider__pics.flexslider
+              ul.slides
+                li(data-thumb='img/slide-1.png')
+                  img.slider__img(src='img/slide-1.png', alt='')
+                //
+                  <li data-thumb="img/slide-1.png">
+                  <img src="img/slide-1.png" alt="" class="slider__img" />
+                  </li>
+                  <li data-thumb="img/slide-1.png">
+                  <img src="img/slide-1.png" alt="" class="slider__img" />
+                  </li>
+                  <li data-thumb="img/slide-1.png">
+                  <img src="img/slide-1.png" alt="" class="slider__img" />
+                  </li>
+            // <div class="slider__preview"></div>
+            // <div class="slider__see-more">Смотреть больше фото</div>
+          .card-prod__info
+            .card-prod__top
+              h1 Orthosleep Comfort mix memory
+            .card-prod__bottom
+              .card-prod__left
+                .card-prod__propetries
+                  .card-prod__param Жёсткость:
+                  .card-prod__value Ниже средней
+                .card-prod__propetries
+                  .card-prod__param Размер:
+                  .card-prod__value
+                    select.card-prod__value_select.dropdown.scrollable(name='', id='')
+                      option(value='', selected='selected') 1000x2100
+                      option(value='') 1400x2100
+                      option(value='') 1600x2100
+                      option(value='') 1800x2100
+                .card-prod__propetries.cover.cover-box(style='display: block;')
+                  .checkbox
+                    input#h55.checkbox__input(name='height', type='checkbox', value='55')
+                    label.checkbox__label(for='h55')
+                      | Съемный чехол
+                      span.checkbox__label_check
+                      span.add_text  + 600 руб
+                .card-prod__propetries.3d-box(style='display:block;')
+                  .checkbox
+                    input#3D.checkbox__input(name='height', type='checkbox', value='15')
+                    label.checkbox__label(for='3D')
+                      | 3D боковина
+                      span.checkbox__label_check
+                      span.add_text
+                .card-prod__price
+                  p.price-old.price-old_card-prod 20 135  Р
+                  span.card-prod__price_title Цена от: 
+                  span.price-new.price-new_card-prod 20 135  Р
+                .card-prod__ordering
+                  a.btn__green.btn__green_ordering.data-action(href='javascript:void(0)', data-action='order') Заказать
+        .block-info.clearfix
+          p
+            | Матрас Original 1  с зависимым пружинным блокам – экономичная покупка на долгие годы.
+          p
+            | Матрас «зависимые пружины» имеет такое же наполнение мягкого слоя, как и более дорогие модели.
+          p
+            i ППУ
+            |  -мягкий, эластичный наполнитель, выдерживает большую нагрузку и  создает основу для комфортного сна, 
+            i струттофайбер (2,5 см)
+            |  – очень упругий материал средней степени жесткости.
+          p
+            | Благодаря двум сторнам различной степени жесткости, вы всегда будете иметь крепкий и здоровый сон.
+          p
+            | Матрасы на зависимых пружинах – это хорошее решение проблем сна при небольших финансовых затратах.
+          p
+            strong Гарантия 
+            | производителя
+            strong   3 года
+          p
+            strong Срок службы 
+            | матраса при соблюдении правил эксплуатации  не менее
+            strong  10 лет
+          p.block__title.show-table Технические характеристики Andersen Комфорт 90x200 см (CMP011)
+          table.sticky-table
+            thead.sticky-thead
+              tr.sticky-tr
+                th.sticky-th Характеристики
+                th.sticky-th Описание
+            tbody.sticky-tbody
+              tr.sticky-tr
+                td.sticky-td Жесткость второй стороны
+                td.sticky-td Мягкий
+              tr.sticky-tr
+                td.sticky-td Высота
+                td.sticky-td 22 см
+              tr.sticky-tr
+                td.sticky-td Максимальная нагрузка
+                td.sticky-td Вес до 90 кг
+              tr.sticky-tr
+                td.sticky-td Конструкция
+                td.sticky-td Несимметричный
+              tr.sticky-tr
+                td.sticky-td Тип матраса
+                td.sticky-td С пружинами
+              tr.sticky-tr
+                td.sticky-td Наполнитель
+                td.sticky-td Мемори
+              tr.sticky-tr
+                td.sticky-td Наполнитель
+                td.sticky-td Кокос
+              tr.sticky-tr
+                td.sticky-td Плотность
+                td.sticky-td 280 пружин /м²
+              tr.sticky-tr
+                td.sticky-td Чехол
+                td.sticky-td Несъемный чехол из поликатоновой ткани, простеганный синтепоном
+        .separator-left
+        .review-card
+          p.review-card__title Отзывы
+          div
+            form#form_reviews.form__reviews(action='', novalidate='')
+              p.error
+                font.errortext              
+              input(type='hidden')
+              .form__rating
+                span.label.label_reviews Рейтинг товара
+                .get-rate           
+              table.kff-tab-form
+                tbody
+                  tr
+                    td.kff-field-label.label_reviews
+                      label.label(for='client_name') Ваше Имя
+                      span.kff-req *
+                    td.kff-name.input_reviews
+                      input.input(type='text', name='f_name', pattern='[А-Яа-яЁёa-zA-Z`\s]{1,100}', maxlength='100', placeholder='Пример: Вдадимир Владимирович', required='')  
+                  tr
+                    td.kff-field-label.label_reviews
+                      label.label(for='client_adress') Ваш отзыв
+                      span.kff-req *
+                    td.kff-text.input_reviews
+                      textarea.input.input.input_reviews_ta(name='f_text', rows='4', pattern='[А-Яа-яЁёa-zA-Z`\s]{1,256}', maxlength='256', placeholder='Пример: Отличный и качественный матрас', required='')
+                  tr
+                    td(colspan='2', align='right')
+                      input(type='hidden')
+                      input.btn__green.btn__green_form-reviews(type='submit', name='submit', value='Оставить отзыв')
+          .comment__wrap
+            .comment.comment_autor.comment_autor_card
+              p.comment__text.comment__text_autor
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+              .comment__name.comment__name_autor Юрий Белов
+            .comment.comment_manager.comment_manager_card
+              p.comment__text.comment__text_manager
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+              .comment__name.comment__name_manager Менеджер Юрий
+            .comment__watch
+              a.btn__orange.btn__orange_review-card(href='#') Смотреть >>
+        .block-info.clearfix
+          h2 Матрас с «правильным» эффектом
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+      // end left-container
+    // end container-int
+    +popUp_order()
+    +popUp_comment()
+    +popUp_quick()

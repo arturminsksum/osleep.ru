@@ -1,0 +1,19 @@
+mixin popUp_order(o)    
+    // begin popUp order
+    .popUp.popUp_order(data-type='order')
+      .popUp__modal
+        .popUp__window.popUp__window_order
+          .order
+            .order__one-click
+              a#orderClick.btn__green.btn__green_one-click(href='#') Заказать в 1 клик
+            .order__add-basket
+              a#addBasket.btn__blue.btn__blue_add-basket(href='javascript:void(0)') Добавить в корзину
+          .product-add
+            p.product-add__title Товар добавлен в корзину
+            .order__product-add
+              a.btn__green.btn__green_product-add(href='/cart') Перейти в корзину
+            .order__shopping
+              a#shopping.btn__blue.btn__blue_shopping(href='/') Продолжить покупки
+          .popUp__window__close
+            i.fa.fa-times.fa-2x
+    // end popUp order

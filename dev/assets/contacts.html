@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title></title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/media-tablet.css"/>
+    <link rel="stylesheet" href="css/media-mobile.css"/>
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  </head>
+  <body>
+    <!-- begin container-h-->
+    <header class="container container-h">
+      <div class="h-mobile">
+        <div class="h-mobile__toggle">
+          <div class="h-mobile__btn"><i class="fa fa-bars"></i></div>
+          <p class="h-mobile__title">Меню</p>
+        </div>
+      </div>
+      <div class="header">
+        <div class="logo"><a href="#" class="logo__link"><img src="img/logo.png" alt=""/></a></div>
+        <div class="contacts">
+          <div class="contacts__email">info@osleep.ru</div>
+          <div class="contacts__phone">+7 (495) 558-61-63</div>
+        </div>
+        <div class="basket"><a href="#" class="btn__blue btn__blue_basket full"><i class="fa fa-shopping-cart"></i>
+            <p class="basket__text"><span>Корзина</span>: 2</p></a></div>
+        <div class="h-way"><a href="#" class="btn__blue btn__way"><i class="fa fa-map-marker"></i><span>Как добраться</span></a></div>
+      </div>
+      <!-- end header-->
+      <!-- begin top-menu-->
+      <ul class="top-menu cl-effect-15">
+        <li class="top-menu__item"><a href="#" data-hover="Главная" class="top-menu__link active">Главная</a></li>
+        <li class="top-menu__item"><a href="#" data-hover="Матрасы" class="top-menu__link">Матрасы</a>
+          <div class="drop-wrap"><a href="#" class="drop-wrap__link"><img src="img/slide-1.png" alt=""/></a>
+            <p class="sub-menu-2__best">Лучший товар раздела</p><a href="#">
+              <p class="sub-menu-2__prod">Матрас Original 2</p></a><a href="#" class="btn__blue btn_sub-menu">Перейти к товару</a>
+            <ul class="sub-menu-1">
+              <li class="sub-menu__item"><a href="#" class="sub-menu__link">С ортопедическим основанием</a>
+                <div class="sub-menu-wrap">
+                  <ul class="sub-menu-2">
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">Детские1</a></li>
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">Детские2</a></li>
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">Детские3</a></li>
+                  </ul><a href="" class="sub-menu-2__link"><img src="img/slide-1.png" alt=""/></a>
+                  <p class="sub-menu-2__best">Лучший товар раздела</p><a href="">
+                    <p class="sub-menu-2__prod">Матрас Original 2</p></a><a href="#" class="btn__blue btn_sub-menu">Перейти к товару</a>
+                </div>
+              </li>
+              <li class="sub-menu__item"><a href="#" class="sub-menu__link">Средние 2</a>
+                <div class="sub-menu-wrap">
+                  <ul class="sub-menu-2">
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">Женские1</a></li>
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">Женские2</a></li>
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">Женские3</a></li>
+                  </ul><a href="" class="sub-menu-2__link"><img src="img/our-production.png" alt=""/></a>
+                  <p class="sub-menu-2__best">Лучший товар раздела</p><a href="">
+                    <p class="sub-menu-2__prod">Матрас 333</p></a><a href="#" class="btn__blue btn_sub-menu">к товару</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="top-menu__item"><a href="#" data-hover="Кровати" class="top-menu__link">Кровати</a></li>
+        <li class="top-menu__item"><a href="#" data-hover="Аксессуары" class="top-menu__link">Аксессуары</a></li>
+        <li class="top-menu__item"><a href="#" data-hover="Акции" class="top-menu__link">Акции</a></li>
+        <li class="top-menu__item"><a href="#" data-hover="Дилерам" class="top-menu__link">Дилерам</a></li>
+        <li class="top-menu__item"><a href="#" data-hover="Покупателям" class="top-menu__link">Покупателям</a></li>
+        <li class="top-menu__item"><a href="#" data-hover="Контакты" class="top-menu__link">Контакты</a></li>
+      </ul>
+      <!-- end top-menu-->
+      <!-- begin form-filter-->
+      <aside class="form-filter">
+        <form id="filter" action="#">
+          <p class="form-filter__title">Подобрать матрас</p>
+          <div class="form-filter__wrap">
+            <div class="form-filter__item">
+              <p class="form-filter__category">Размер</p>
+              <select name="" id="" class="form-filter__multi dropdown scrollable">
+                <option value="" selected="selected">Не важно</option>
+                <option value="">1800x900</option>
+                <option value="">1900x1200</option>
+                <option value="">2000x1500</option>
+              </select>
+            </div>
+            <div class="form-filter__item">
+              <p class="form-filter__category">Жесткость</p>
+              <select name="" id="" class="form-filter__multi dropdown">
+                <option value="" selected="selected">Не важно</option>
+                <option value="">Жесткие</option>
+                <option value="">Универсальные</option>
+                <option value="">Мягкие</option>
+              </select>
+            </div>
+            <div class="form-filter__item form-filter__item_hidden price-check">
+              <p class="form-filter__category">Диапазон цен</p>
+              <div class="checkbox">
+                <input id="h15" name="range" type="checkbox" value="" data-chmin="5000" data-chmax="10000" class="checkbox__input"/>
+                <label for="h15" class="checkbox__label">от 5000 до 10000<span class="checkbox__label_check"></span></label>
+              </div>
+              <div class="checkbox">
+                <input id="h16" name="range" type="checkbox" value="" data-chmin="10000" data-chmax="20000" class="checkbox__input"/>
+                <label for="h16" class="checkbox__label">от 10000 до 20000<span class="checkbox__label_check"></span></label>
+              </div>
+              <div class="checkbox">
+                <input id="h17" name="range" type="checkbox" value="" data-chmin="20000" data-chmax="30000" class="checkbox__input"/>
+                <label for="h17" class="checkbox__label">от 20000 до 30000<span class="checkbox__label_check"></span></label>
+              </div>
+              <div class="checkbox">
+                <input id="h18" name="range" type="checkbox" value="" data-chmin="30000" data-chmax="40000" class="checkbox__input"/>
+                <label for="h18" class="checkbox__label">от 30000 до 40000<span class="checkbox__label_check"></span></label>
+              </div>
+              <div class="checkbox">
+                <input id="h20" name="range" type="checkbox" value="" data-chmin="40000" data-chmax="100000" class="checkbox__input"/>
+                <label for="h20" class="checkbox__label">от 40000 и выше<span class="checkbox__label_check"></span></label>
+              </div>
+            </div>
+            <div class="form-filter__item form-filter__item_hidden">
+              <p class="form-filter__category">Стоимость</p>
+              <div id="slider-snap" class="slider-range"></div>
+              <div class="slider-range__min-max">
+                <div class="slider-range__value"><span>от </span><span id="slider-snap-value-lower"></span><span> руб</span></div>
+                <div class="slider-range__value"><span>до </span><span id="slider-snap-value-upper"></span><span> руб</span></div>
+                <input id="input-number-lower" value="0" style="display:none"/>
+                <input id="input-number-upper" value="100000" style="display:none"/>
+              </div>
+            </div>
+          </div>
+          <p class="form-filter__more">Дополнительные параметры</p>
+          <div class="btn-wrap">
+            <button type="submit" class="btn__orange btn__orange_filter">Подобрать</button>
+          </div>
+        </form>
+      </aside>
+      <!-- end form-filter-->
+    </header>
+    <!-- end container-h-->
+    <!-- begin container-int-->
+    <div class="container container-int">
+      <!-- begin left-container-->
+      <div class="left-container">
+        <!-- begin breadcrumb-->
+        <div class="bx-breadcrumb">
+          <div class="bx-breadcrumb-item"><a href="/"><span>Главная</span></a></div>
+          <div class="bx-breadcrumb-item"><i class="fa fa-angle-right"></i><a href="/"><span>Каталог</span></a></div>
+          <div class="bx-breadcrumb-item"><i class="fa fa-angle-right"></i><a href="/"><span>Матрасы        </span></a></div>
+          <div class="bx-breadcrumb-item"><i class="fa fa-angle-right"></i><a href="/">Матрас ортопедический А20             </a></div>
+        </div>
+        <!-- end breadcrumb-->
+        <h1>Контакты интернет-магазина:</h1>
+        <!-- begin b_contact-->
+        <div class="b_contact">
+          <p class="b_contact__title">Выставочный зал в ТЦ "Roomer" на Автозаводской</p>
+          <div class="b_contact__wrap-info">
+            <div class="b_contact__info">
+              <div class="b_contact__item">
+                <div class="b_contact__icon">
+                  <div class="fa fa-map-marker"> </div>
+                </div>
+                <div class="b_contact__name">Адрес магазина:</div>
+                <div class="b_contact__text">г. Москва, м. Автозаводская, ул. Ленинская Слобода, 26, 2 - этаж, №240 - конец зала (матрасная секция)</div>
+              </div>
+              <div class="b_contact__item">
+                <div class="b_contact__icon">
+                  <div class="fa fa-phone"> </div>
+                </div>
+                <div class="b_contact__name">Телефоны:</div>
+                <div class="b_contact__text">7 (495) 558-61-63</div>
+              </div>
+            </div>
+            <div class="b_contact__info">
+              <div class="b_contact__item">
+                <div class="b_contact__icon">
+                  <div class="fa fa-clock-o"> </div>
+                </div>
+                <div class="b_contact__name">График работы:</div>
+                <div class="b_contact__text b_contact__text_time">10.00-22.00</div>
+                <div class="b_contact__text_sub">Ежедневно</div>
+              </div>
+            </div>
+          </div>
+          <div class="b_contact__map">
+            <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=_lBxUZG2pA8kzExKwG1bzDOUWVwY-eSz&amp;width=100%&amp;height=450"></script>
+          </div>
+        </div>
+        <!-- end b_contact-->
+        <!-- begin b_contact-->
+        <div class="b_contact">
+          <div class="b_contact__title">Выставочный зал у м. Семеновская или м. Шоссе Энтузиастов</div>
+          <div class="b_contact__wrap-info">
+            <div class="b_contact__info">
+              <div class="b_contact__item">
+                <div class="b_contact__icon">
+                  <div class="fa fa-map-marker"> </div>
+                </div>
+                <div class="b_contact__name">Адрес магазина:</div>
+                <div class="b_contact__text">105118, РФ, г. Москва, ул. Буракова, д. 6 А</div>
+              </div>
+              <div class="b_contact__item">
+                <div class="b_contact__icon">
+                  <div class="fa fa-phone"> </div>
+                </div>
+                <div class="b_contact__name">Телефоны:</div>
+                <div class="b_contact__text">7 (495) 558-61-63</div>
+                <div class="b_contact__text">7 (499) 550-1-550</div>
+              </div>
+            </div>
+            <div class="b_contact__info">
+              <div class="b_contact__item">
+                <div class="b_contact__icon">
+                  <div class="fa fa-clock-o"> </div>
+                </div>
+                <div class="b_contact__name">График работы:</div>
+                <div class="b_contact__text_sub">Будние дни:</div>
+                <div class="b_contact__text b_contact__text_time">10.00-20.00</div>
+                <div class="b_contact__text_sub">Выходные:</div>
+                <div class="b_contact__text b_contact__text_time">10.00-18.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end b_contact-->
+        <!-- begin b_contact-->
+        <div class="b_contact">
+          <div class="b_contact__title">OrthoSleep в ТЦ Синдика</div>
+          <div class="b_contact__wrap-info">
+            <div class="b_contact__info">
+              <div class="b_contact__item">
+                <div class="b_contact__icon">
+                  <div class="fa fa-map-marker"> </div>
+                </div>
+                <div class="b_contact__name">Адрес магазина:</div>
+                <div class="b_contact__text">Московская область, Одинцовский р-н, дер. Раздоры, МКАД 65км, 2 этаж, Подиум OrhoSleep</div>
+              </div>
+              <div class="b_contact__item">
+                <div class="b_contact__icon">
+                  <div class="fa fa-phone"> </div>
+                </div>
+                <div class="b_contact__name">Телефоны:</div>
+                <div class="b_contact__text">7 (495) 558-61-63</div>
+              </div>
+            </div>
+            <div class="b_contact__info">
+              <div class="b_contact__item">
+                <div class="b_contact__icon">
+                  <div class="fa fa-clock-o"> </div>
+                </div>
+                <div class="b_contact__name">График работы:</div>
+                <div class="b_contact__text b_contact__text_time">10.00-21.00</div>
+                <div class="b_contact__text_sub">Ежедневно</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end b_contact-->
+        <!-- begin b_contact-->
+        <div class="b_contact">
+          <div class="b_contact__title">Салон в ТЦ Румянцево</div>
+          <div class="b_contact__wrap-info">
+            <div class="b_contact__info">
+              <div class="b_contact__item">
+                <div class="b_contact__icon">
+                  <div class="fa fa-map-marker"> </div>
+                </div>
+                <div class="b_contact__name">Адрес магазина:</div>
+                <div class="b_contact__text">500м от МКАД по Киевскому шоссе, Бизнес парк "Румянцево", корпус А, 3-й вход, 2 этаж, линия С-7</div>
+              </div>
+              <div class="b_contact__item">
+                <div class="b_contact__icon">
+                  <div class="fa fa-phone"> </div>
+                </div>
+                <div class="b_contact__name">Телефоны:</div>
+                <div class="b_contact__text">7 (495) 558-61-63</div>
+              </div>
+              <div class="b_contact__item">
+                <div class="b_contact__icon b_contact__icon_envelope">
+                  <div class="fa fa-envelope"> </div>
+                </div>
+                <div class="b_contact__name">E-mail:</div>
+                <div class="b_contact__text">info@orthosleep.ru</div>
+              </div>
+            </div>
+            <div class="b_contact__info">
+              <div class="b_contact__item">
+                <div class="b_contact__icon">
+                  <div class="fa fa-clock-o"> </div>
+                </div>
+                <div class="b_contact__name">График работы:</div>
+                <div class="b_contact__text b_contact__text_time">10.00-21.00</div>
+                <div class="b_contact__text_sub">Ежедневно</div>
+              </div>
+              <div class="b_contact__item">
+                <div class="b_contact__icon b_contact__icon_word">
+                  <div class="fa fa-file-word-o"> </div>
+                </div>
+                <div class="b_contact__name">Юридические реквизиты:</div>
+                <div class="b_contact__text_legal">г. Москва, ул. Октябрьская, 13,</div>
+                <div class="b_contact__text_legal">оф 306</div>
+                <div class="b_contact__text_legal">р/c 456567678678</div>
+                <div class="b_contact__text_legal">ОАО "Сбербанк России", код 456</div>
+                <div class="b_contact__text_legal">УНН 896567898</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- begin contacts-form-->
+        <div class="client-form">
+          <p class="client-form__title">Данные о покупателе</p>
+          <div>
+            <form id="form_contacts" action="" novalidate="novalidate" class="form form__contacts">
+              <p class="error"><font class="errortext">       </font></p>
+              <input type="hidden"/>
+              <table class="kff-tab-form">
+                <tbody>
+                  <tr>
+                    <td class="kff-field-label label_client">
+                      <label for="client_name" class="label">Ваше Имя</label><span class="kff-req">*</span>
+                    </td>
+                    <td class="kff-name input_client">
+                      <input type="text" name="f_name" pattern="[А-Яа-яЁёa-zA-Z`s]{1,100}" maxlength="100" placeholder="Пример: Вдадимир Владимирович" required="" class="input"/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="kff-field-label label_client">
+                      <label for="client_phone" class="label">Телефон</label><span class="kff-req">*</span>
+                    </td>
+                    <td class="kff-name input_client">
+                      <input type="tel" name="f_phone" pattern="[0-9()-s+]{3,20}" maxlength="20" placeholder="Пример: +789 8569 5478 568" required="" class="input"/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="kff-field-label label_client">
+                      <label for="client_email" class="label">E-mail</label>
+                    </td>
+                    <td class="kff-email input_client">
+                      <input type="email" name="form[user_email]" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+.[a-zA-Z.]{2,8}$" maxlength="128" placeholder="пример: test@mail.ru" class="input"/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="kff-field-label label_client">
+                      <label for="client_adress" class="label">Комментарий</label>
+                    </td>
+                    <td class="kff-text input_client">
+                      <textarea name="form[user_adress]" rows="5" pattern="[А-Яа-яЁёa-zA-Z`s]{1,100}" maxlength="100" placeholder="Пример: 101000, г.Москва, ул.Бочкова, д.8, кв.11" class="input input_client_ta"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <div class="kff-cwrap">
+                        <div class="kff-ctext">Защита от СПАМа</div>
+                        <input type="hidden" name="captcha_sid" value="0038b14be99cab274b94c8717b0d1b76"/><img src="" width="180" height="40" alt="CAPTCHA"/>
+                      </div>
+                      <div class="kff-cwrap">   
+                        <div class="kff-ctext">Введите текст<span class="kff-req">*</span></div>
+                        <input type="text" name="captcha_word" size="30" maxlength="50" value="" class="input"/>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" align="right">
+                      <input type="hidden"/>
+                      <input type="submit" name="submit" value="Отправить вопрос" class="btn__green btn__green_form-client"/>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
+        </div>
+        <!-- end contacts-form-->
+        <div style="display: none;" class="letter">
+          <p class="letter__title">Ваш вопрос отправлен администратору.</p>
+          <p class="letter__title">Спасибо!      </p>
+        </div>
+      </div>
+      <!-- end left-container-->
+    </div>
+    <!-- end container-int-->
+    <!-- begin container_banner-->
+    <div class="container container_banner"><a href="/magazin"><img src="img/banner.jpg" alt=""/></a></div>
+    <!-- end container_banner-->
+    <!-- begin container_f-->
+    <footer class="container container_f">
+      <!-- begin footer-->
+      <div class="footer">
+        <div class="footer__contacts">
+          <div class="logo logo_f"><a href="#" class="logo__link"><img src="img/logo.png" alt=""/></a></div>
+          <div class="contacts contacts_f _d-ib"><span>+7 (495) 558-61-63<br/>info@osleep.ru</span></div>
+          <div class="share"><a href="http://vk.com/orthosleep" target="_blank"><img src="img/vk.png" alt=""/></a><a href="https://www.facebook.com/107337676295040/" target="_blank"><img src="img/fb.png" alt=""/></a><a href="http://ok.ru/group/53716697612541" target="_blank"><img src="img/ok.png" alt=""/></a></div>
+        </div>
+        <ul class="prod-ul _d-ib _f-margin">
+          <p class="prod-ul__title">Продукция</p>
+          <li class="prod-ul__item"><a href="#" class="prod-ul__link">Матрасы</a></li>
+          <li class="prod-ul__item"><a href="#" class="prod-ul__link">Кровати</a></li>
+          <li class="prod-ul__item"><a href="#" class="prod-ul__link">Наматрасники</a></li>
+          <li class="prod-ul__item"><a href="#" class="prod-ul__link">Основания</a></li>
+          <li class="prod-ul__item"><a href="#" class="prod-ul__link">Подушки</a></li>
+          <li class="prod-ul__item"><a href="#" class="prod-ul__link">Компания</a></li>
+        </ul>
+        <ul class="page-list page-list_1 _d-ib _f-margin">
+          <li class="page-list__item"><a href="#" class="page-list__link">О компании</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">События</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">Связаться с нами</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">Магазины</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">Энциклопедия сна</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">Магазин</a></li>
+        </ul>
+        <ul class="page-list page-list_2 _d-ib _f-margin">
+          <li class="page-list__item"><a href="#" class="page-list__link">О продавце</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">Страница клиента</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">Справочник покупателя</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">Оплата и доставка</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">Склад</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">Каталог</a></li>
+        </ul>
+      </div>
+      <!-- end footer-->
+    </footer>
+    <!-- end container_f-->
+    <script src="js/vendor/jquery-1.11.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/jquery.raty.js"></script>
+    <script src="js/jquery.easydropdown.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.liquidcarousel.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

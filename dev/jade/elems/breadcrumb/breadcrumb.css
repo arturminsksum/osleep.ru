@@ -1,0 +1,27 @@
+.bx-breadcrumb {
+	margin-bottom: 20px;
+	padding-left: 20px;
+	font-size: 14px;
+	line-height: 2.2;
+	background-color: #dde6ee;
+
+	&-item {
+		display: inline-block;
+
+		i {
+			padding: 0 5px;
+			color: #009ed2;
+		}
+
+		a {
+			color: #009ed2;
+
+			&:hover {
+				text-decoration: underline;
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,161 @@
+mixin captcha(o)
+  .anti-spam
+    .kff-ctext.label Защита от СПАМа
+    input(type='hidden', name='captcha_sid', value='0038b14be99cab274b94c8717b0d1b76')
+    img(src='', width='180', height='40', alt='CAPTCHA')
+    .kff-ctext
+      | Введите текст
+      span.kff-req *
+    input(type='text', name='captcha_word', size='30', maxlength='50', value='')
+mixin cart(o)
+    // begin container-int
+    .container.container-int
+      // begin left-container
+      .left-container
+        // begin breadcrumb
+        +bx-breadcrumb()
+        // end breadcrumb
+        // begin b-basket
+        .b-basket
+          ._just-h
+            p.b-basket__title Корзина
+            .b-basket__continue
+              a.btn__blue.btn__blue_continue(href='#') Продолжить покупки
+          .b-basket__table
+            .b-basket__tr
+              .b-basket__th Название Товара
+              .b-basket__th Цена
+              .b-basket__th Количество
+              .b-basket__th Сумма
+              .b-basket__th
+            - for (var x = 0; x < 3; x++)    
+              .b-basket__tr.b-basket__tr_prod
+                .b-basket__td.b-basket__td_prod
+                  .b-basket__td_prod-wrap
+                    a.b-basket__link-img(href='#')
+                      img.b-basket__img(src='img/hit-sales.png', alt='')
+                    a.b-basket__link-prod(href='#')
+                      p.b-basket__prod-name Ортопедический матрас Sleep Control
+                      p.b-basket__prod-size размер 90х180
+                .b-basket__td.b-basket__td_price
+                  span.b-basket__price 18895
+                  |  р.
+                .b-basket__td.b-basket__td_counter
+                  .numb_content
+                    .b-minus
+                      i.fa.fa-minus.fa-lg
+                    p.b-result 1
+                    .b-plus
+                      i.fa.fa-plus.fa-lg
+                .b-basket__td.b-basket__td_amount
+                  span.b-basket__amount 18895
+                  |  р.
+                .b-basket__td.b-basket__td_del
+                  i.fa.fa-times.fa-lg.data-action(data-action='delete')
+            .b-basket__tr.b-basket__tr_sum
+              .b-basket__td.b-basket__td_text Итого
+              .b-basket__td.b-basket__td_empty
+              .b-basket__td.b-basket__td_empty
+              .b-basket__td.b-basket__td_sum
+                span.b-basket__sum 37790
+                |  р.
+              .b-basket__td.b-basket__td_remove
+                // <i class="fa fa-trash-o fa-lg"></i>
+          .letter(style='display: none;')
+            p.letter__title Вы сделали заказ на сайте osleep.ru
+            p.letter__title Спасибо!
+            p.letter__subtitle Ниже приведены параметры вашего заказа
+            p.letter__info
+              span.letter__info-title Имя: 
+              span.letter__info-name фывафвы
+            p.letter__info
+              span.letter__info-title Адрес: 
+              span.letter__info-phone Prititskogo Street h78 f762
+            p.letter__info
+              span.letter__info-title Телефон: 
+              span.letter__info-adress 123
+            p.letter__info
+              span.letter__info-title E-mail: 
+              span.letter__info-email artur.minsk.sum@gmail.com
+            p.letter__info
+              span.letter__info-title Комментарий: 
+              span.letter__info-comment
+            p.letter__subtitle
+              | Номер вашего заказа 
+              span.letter__subtitle_number 52
+            table.letter__table
+              tbody
+                tr
+                  th #1
+                  th Товар
+                  th Цена
+                  th Кол-во
+                  th Итого
+                tr
+                  td 1
+                  td Матрас Comfort S soft
+                  td 8950
+                  td 1
+                  td 8950
+            p.letter__sum
+              | Итого: 
+              span.letter__sum_value 8950
+              |  руб
+            p.letter__info
+              span.letter__info-title Телефон для справок: 
+              span.letter__info-ask +7 (495) 558-61-63
+            p.letter__info
+              span.letter__info-title Пункт Самовывоза: 
+              span.letter__info-mag г. Москва, ул.Буракова 6а, строение 1
+            p.letter__info
+              span.letter__info-title Адреса магазинов:
+            p.letter__info
+              span.letter__info-title Выставочный зал в "Румянцево" на Киевском шоссе
+            p.letter__info
+              span.letter__info-title Адрес: 
+              span.letter__info-mag
+                | 500м от МКАД по Киевскому шоссе, Бизнес парк "Румянцево", корпус А, 3-й вход, 2 этаж, линия С-7.
+            p.letter__info
+              span.letter__info-title Время работы: 10:00 - 21:00 Ежедневно.
+              span.letter__info-mag Телефон: +7 (495) 558-61-63
+            p.letter__info
+              span.letter__info-title Выставочный зал у м. Семеновская или м. Шоссе Энтузиастов
+            p.letter__info
+              span.letter__info-title Адрес: 
+              span.letter__info-mag 105118, РФ, г. Москва, ул. Буракова, д. 6 А
+            p.letter__info
+              span.letter__info-title Время работы:
+              span.letter__info-mag Будние дни: 10:00 - 20:00
+              span.letter__info-mag Выходные: 10:00 - 18:00
+              span.letter__info-mag Телефон: +7 (495) 558-61-63
+              span.letter__info-mag Телефон: +7 (499) 550-1-550
+            p.letter__info
+              span.letter__info-title OrthoSleep в ТЦ Синдика
+            p.letter__info
+              span.letter__info-title Адрес: 
+              span.letter__info-mag
+                | Московская область, Одинцовский р-н, дер. Раздоры, МКАД 65км, 2 этаж, Подиум OrhoSleep.
+            p.letter__info
+              span.letter__info-title Время работы: 10:00 - 21:00. Ежедневно
+              span.letter__info-mag Телефон: +7 (495) 558-61-63
+            p.letter__info
+              span.letter__info-title Выставочный зал в ТЦ "Roomer" на  Автозаводской
+            p.letter__info
+              span.letter__info-title Адрес: 
+              span.letter__info-mag
+                | г. Москва, ЮАО,ул. Ленинская Слобода, д. 26 (ст.м. «Автозаводская») 200 м от ст. м. «Автозаводская» 500 м от ТТК.
+            p.letter__info
+              span.letter__info-title Время работы : 10.00 - 22.00. Ежедневно
+              span.letter__info-mag Телефон: +7 (495) 558-61-63.
+            .letter__print
+              a.btn__green.btn__green_print(href='javascript:window.print()') Распечатать
+            //- .letter__save
+              a.btn__blue.btn__blue_save(href='#') Cохранить
+              Распечатать
+        // end b-basket
+        // begin client-form
+        +cart-form()
+        // end client-form        
+      // end left-container
+    // end container-int
+    +popUp_delete()

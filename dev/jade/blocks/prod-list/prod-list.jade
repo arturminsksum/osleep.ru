@@ -1,0 +1,16 @@
+mixin prod-list(add_class)
+  - var prod_class = (typeof add_class === 'undefined') ? '' : add_class    
+  .prod-list(class = prod_class)
+    a.prod-img__link(href='#')
+      img.prod-list__img(src='img/hit-sales.png', alt='')
+    a(href='#')
+      p.prod-list__prod-name Матрас Матрас 10АМатрас
+    .prod-list__rating-price
+      //- .prod-list__rating
+      .prod-list__price
+        //- p.price-old 20 135 &#8381;
+        p.price-new 20 135 &#8381;
+    .prod-list__propetries
+      .prod-list__param Жёсткость:
+      .prod-list__value Универсальный
+    a.btn__blue.btn__blue_prod-list(href='#') Подробнее

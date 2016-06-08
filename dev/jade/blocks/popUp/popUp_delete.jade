@@ -1,0 +1,14 @@
+mixin popUp_delete(o)    
+  // begin popUp delete
+  .popUp.popUp_delete(data-type='delete')
+    .popUp__modal
+      .popUp__window.popUp__window_delete
+        p.popUp__title Удалить из корзины?
+        .confirm
+          .confirm__yes
+            a.btn__green.btn__green_product-add(href='javascript:void(0)') Да
+          .confirm__no
+            a#shopping.btn__blue.btn__blue_shopping(href='javascript:void(0)') Нет
+        .popUp__window__close
+          i.fa.fa-times.fa-2x
+  // end popUp delete

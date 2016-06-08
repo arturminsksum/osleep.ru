@@ -1,0 +1,55 @@
+mixin index(o)
+  // begin container-main
+  .container.container-main
+    .offers
+      .offers__item.offers__item_bg
+        a(href='')
+          img.offers__img(src='img/offer-bg.jpg', alt='')
+      .offers__itemWrap
+        .offers__item.offers__item_md
+          a(href='')
+            img.offers__img(src='img/offer-md.jpg', alt='')
+        .offers__item.offers__item_sm
+          a(href='')
+            img.offers__img(src='img/offer-sm.jpg', alt='')
+    // end offers
+    .separator
+    // begin catalog
+    .catalog
+      - for (var x = 0; x < 5; x++)
+        figure.effect-sadie
+          img(src='img/catalog-item.png', alt='img02')
+          figcaption
+            h3 Ортопедические основания
+            p Подробнее >>
+            a(href='#') Подробнее
+    // end catalog
+    .separator
+    // begin our-production
+    .block-info.clearfix
+      h1 OrthoSleep - сладкий сон и приятный отдых!
+      p
+        | Компания OrthoSleep – ваш надежный проводник в царство сладкого Морфея! Мы обеспечим вам комфортный сон и бодрое пробуждение!
+      h2 Собственное производство
+      p
+        | Имея собственное производство и используя профессиональные немецкие технологии, мы изготавливаем лучшие матрасы, кровати и сопутствующие товары для правильного отдыха. С ними вы забудете о болях в спине и раздражении! Они подарят вашему позвоночнику разгрузку, позволят полностью снять стресс и забыть о накопившихся дневных проблемах!
+      p
+        | Мы разрабатывали собственную продукцию вместе с немецкими экспертами в производстве товаров для сна и отдыха. На профессиональном немецком оборудовании мы выпускаем:
+      ul
+        li Матрасы пружинные и беспружинные.
+        li Разных размеров.
+        li С разными наполнителями (в том числе с латексом и кокосом).
+        li Мягкие и жесткие.
+      p
+        | Мы изготавливаем продукцию по индивидуальным заказам клиентов. К вашим услугам – любые размеры и формы!
+      p OrthoSleep – производитель матрасов отменного качества за небольшие деньги!
+    // end our-production
+    .separator
+    // begin hit-sales
+    .hit-sales
+      p.hit-sales__title Хиты Продаж
+      .hit-sales__wrap
+        - for (var x = 0; x < 4; x++)
+          +prod-list('prod-list_hit-sales')        
+    // end hit-sales
+  // end container-main

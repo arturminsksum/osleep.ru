@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title></title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/media-tablet.css"/>
+    <link rel="stylesheet" href="css/media-mobile.css"/>
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  </head>
+  <body>
+    <!-- begin container-h-->
+    <header class="container container-h">
+      <div class="h-mobile">
+        <div class="h-mobile__toggle">
+          <div class="h-mobile__btn"><i class="fa fa-bars"></i></div>
+          <p class="h-mobile__title">Меню</p>
+        </div>
+      </div>
+      <div class="header">
+        <div class="logo"><a href="#" class="logo__link"><img src="img/logo.png" alt=""/></a></div>
+        <div class="contacts">
+          <div class="contacts__email">info@osleep.ru</div>
+          <div class="contacts__phone">+7 (495) 558-61-63</div>
+        </div>
+        <div class="basket"><a href="#" class="btn__blue btn__blue_basket full"><i class="fa fa-shopping-cart"></i>
+            <p class="basket__text"><span>Корзина</span>: 2</p></a></div>
+        <div class="h-way"><a href="#" class="btn__blue btn__way"><i class="fa fa-map-marker"></i><span>Как добраться</span></a></div>
+      </div>
+      <!-- end header-->
+      <!-- begin top-menu-->
+      <ul class="top-menu cl-effect-15">
+        <li class="top-menu__item"><a href="#" data-hover="Главная" class="top-menu__link active">Главная</a></li>
+        <li class="top-menu__item"><a href="#" data-hover="Матрасы" class="top-menu__link">Матрасы</a>
+          <div class="drop-wrap"><a href="#" class="drop-wrap__link"><img src="img/slide-1.png" alt=""/></a>
+            <p class="sub-menu-2__best">Лучший товар раздела</p><a href="#">
+              <p class="sub-menu-2__prod">Матрас Original 2</p></a><a href="#" class="btn__blue btn_sub-menu">Перейти к товару</a>
+            <ul class="sub-menu-1">
+              <li class="sub-menu__item"><a href="#" class="sub-menu__link">С ортопедическим основанием</a>
+                <div class="sub-menu-wrap">
+                  <ul class="sub-menu-2">
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">Детские1</a></li>
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">Детские2</a></li>
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">Детские3</a></li>
+                  </ul><a href="" class="sub-menu-2__link"><img src="img/slide-1.png" alt=""/></a>
+                  <p class="sub-menu-2__best">Лучший товар раздела</p><a href="">
+                    <p class="sub-menu-2__prod">Матрас Original 2</p></a><a href="#" class="btn__blue btn_sub-menu">Перейти к товару</a>
+                </div>
+              </li>
+              <li class="sub-menu__item"><a href="#" class="sub-menu__link">Средние 2</a>
+                <div class="sub-menu-wrap">
+                  <ul class="sub-menu-2">
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">Женские1</a></li>
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">Женские2</a></li>
+                    <li class="sub-menu__item"><a href="#" class="sub-menu__link">Женские3</a></li>
+                  </ul><a href="" class="sub-menu-2__link"><img src="img/our-production.png" alt=""/></a>
+                  <p class="sub-menu-2__best">Лучший товар раздела</p><a href="">
+                    <p class="sub-menu-2__prod">Матрас 333</p></a><a href="#" class="btn__blue btn_sub-menu">к товару</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="top-menu__item"><a href="#" data-hover="Кровати" class="top-menu__link">Кровати</a></li>
+        <li class="top-menu__item"><a href="#" data-hover="Аксессуары" class="top-menu__link">Аксессуары</a></li>
+        <li class="top-menu__item"><a href="#" data-hover="Акции" class="top-menu__link">Акции</a></li>
+        <li class="top-menu__item"><a href="#" data-hover="Дилерам" class="top-menu__link">Дилерам</a></li>
+        <li class="top-menu__item"><a href="#" data-hover="Покупателям" class="top-menu__link">Покупателям</a></li>
+        <li class="top-menu__item"><a href="#" data-hover="Контакты" class="top-menu__link">Контакты</a></li>
+      </ul>
+      <!-- end top-menu-->
+      <!-- begin form-filter-->
+      <aside class="form-filter">
+        <form id="filter" action="#">
+          <p class="form-filter__title">Подобрать матрас</p>
+          <div class="form-filter__wrap">
+            <div class="form-filter__item">
+              <p class="form-filter__category">Размер</p>
+              <select name="" id="" class="form-filter__multi dropdown scrollable">
+                <option value="" selected="selected">Не важно</option>
+                <option value="">1800x900</option>
+                <option value="">1900x1200</option>
+                <option value="">2000x1500</option>
+              </select>
+            </div>
+            <div class="form-filter__item">
+              <p class="form-filter__category">Жесткость</p>
+              <select name="" id="" class="form-filter__multi dropdown">
+                <option value="" selected="selected">Не важно</option>
+                <option value="">Жесткие</option>
+                <option value="">Универсальные</option>
+                <option value="">Мягкие</option>
+              </select>
+            </div>
+            <div class="form-filter__item form-filter__item_hidden price-check">
+              <p class="form-filter__category">Диапазон цен</p>
+              <div class="checkbox">
+                <input id="h15" name="range" type="checkbox" value="" data-chmin="5000" data-chmax="10000" class="checkbox__input"/>
+                <label for="h15" class="checkbox__label">от 5000 до 10000<span class="checkbox__label_check"></span></label>
+              </div>
+              <div class="checkbox">
+                <input id="h16" name="range" type="checkbox" value="" data-chmin="10000" data-chmax="20000" class="checkbox__input"/>
+                <label for="h16" class="checkbox__label">от 10000 до 20000<span class="checkbox__label_check"></span></label>
+              </div>
+              <div class="checkbox">
+                <input id="h17" name="range" type="checkbox" value="" data-chmin="20000" data-chmax="30000" class="checkbox__input"/>
+                <label for="h17" class="checkbox__label">от 20000 до 30000<span class="checkbox__label_check"></span></label>
+              </div>
+              <div class="checkbox">
+                <input id="h18" name="range" type="checkbox" value="" data-chmin="30000" data-chmax="40000" class="checkbox__input"/>
+                <label for="h18" class="checkbox__label">от 30000 до 40000<span class="checkbox__label_check"></span></label>
+              </div>
+              <div class="checkbox">
+                <input id="h20" name="range" type="checkbox" value="" data-chmin="40000" data-chmax="100000" class="checkbox__input"/>
+                <label for="h20" class="checkbox__label">от 40000 и выше<span class="checkbox__label_check"></span></label>
+              </div>
+            </div>
+            <div class="form-filter__item form-filter__item_hidden">
+              <p class="form-filter__category">Стоимость</p>
+              <div id="slider-snap" class="slider-range"></div>
+              <div class="slider-range__min-max">
+                <div class="slider-range__value"><span>от </span><span id="slider-snap-value-lower"></span><span> руб</span></div>
+                <div class="slider-range__value"><span>до </span><span id="slider-snap-value-upper"></span><span> руб</span></div>
+                <input id="input-number-lower" value="0" style="display:none"/>
+                <input id="input-number-upper" value="100000" style="display:none"/>
+              </div>
+            </div>
+          </div>
+          <p class="form-filter__more">Дополнительные параметры</p>
+          <div class="btn-wrap">
+            <button type="submit" class="btn__orange btn__orange_filter">Подобрать</button>
+          </div>
+        </form>
+      </aside>
+      <!-- end form-filter-->
+    </header>
+    <!-- end container-h-->
+    <!-- begin container-int-->
+    <div class="container container-int">
+      <!-- begin left-container-->
+      <div class="left-container">
+        <!-- begin breadcrumb-->
+        <div class="bx-breadcrumb">
+          <div class="bx-breadcrumb-item"><a href="/"><span>Главная</span></a></div>
+          <div class="bx-breadcrumb-item"><i class="fa fa-angle-right"></i><a href="/"><span>Каталог</span></a></div>
+          <div class="bx-breadcrumb-item"><i class="fa fa-angle-right"></i><a href="/"><span>Матрасы        </span></a></div>
+          <div class="bx-breadcrumb-item"><i class="fa fa-angle-right"></i><a href="/">Матрас ортопедический А20             </a></div>
+        </div>
+        <!-- end breadcrumb-->
+        <!-- begin card-prod-->
+        <div class="card-prod">
+          <div class="card-prod__slider">
+            <div class="slider__pics flexslider">
+              <ul class="slides">
+                <li data-thumb="img/slide-1.png"><img src="img/slide-1.png" alt="" class="slider__img"/></li>
+                <!--
+                <li data-thumb="img/slide-1.png">
+                <img src="img/slide-1.png" alt="" class="slider__img" />
+                </li>
+                <li data-thumb="img/slide-1.png">
+                <img src="img/slide-1.png" alt="" class="slider__img" />
+                </li>
+                <li data-thumb="img/slide-1.png">
+                <img src="img/slide-1.png" alt="" class="slider__img" />
+                </li>
+                -->
+              </ul>
+            </div>
+            <!-- <div class="slider__preview"></div>-->
+            <!-- <div class="slider__see-more">Смотреть больше фото</div>-->
+          </div>
+          <div class="card-prod__info">
+            <div class="card-prod__top">
+              <h1>Orthosleep Comfort mix memory</h1>
+            </div>
+            <div class="card-prod__bottom">
+              <div class="card-prod__left">
+                <div class="card-prod__propetries">
+                  <div class="card-prod__param">Жёсткость:</div>
+                  <div class="card-prod__value">Ниже средней</div>
+                </div>
+                <div class="card-prod__propetries">
+                  <div class="card-prod__param">Размер:</div>
+                  <div class="card-prod__value">
+                    <select name="" id="" class="card-prod__value_select dropdown scrollable">
+                      <option value="" selected="selected">1000x2100</option>
+                      <option value="">1400x2100</option>
+                      <option value="">1600x2100</option>
+                      <option value="">1800x2100</option>
+                    </select>
+                  </div>
+                </div>
+                <div style="display: block;" class="card-prod__propetries cover cover-box">
+                  <div class="checkbox">
+                    <input id="h55" name="height" type="checkbox" value="55" class="checkbox__input"/>
+                    <label for="h55" class="checkbox__label">Съемный чехол<span class="checkbox__label_check"></span><span class="add_text"> + 600 руб</span></label>
+                  </div>
+                </div>
+                <div style="display:block;" class="card-prod__propetries 3d-box">
+                  <div class="checkbox">
+                    <input id="3D" name="height" type="checkbox" value="15" class="checkbox__input"/>
+                    <label for="3D" class="checkbox__label">3D боковина<span class="checkbox__label_check"></span><span class="add_text"></span></label>
+                  </div>
+                </div>
+                <div class="card-prod__price">
+                  <p class="price-old price-old_card-prod">20 135  Р</p><span class="card-prod__price_title">Цена от: </span><span class="price-new price-new_card-prod">20 135  Р</span>
+                </div>
+                <div class="card-prod__ordering"><a href="javascript:void(0)" data-action="order" class="btn__green btn__green_ordering data-action">Заказать</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-info clearfix">
+          <p>Матрас Original 1  с зависимым пружинным блокам – экономичная покупка на долгие годы.</p>
+          <p>Матрас «зависимые пружины» имеет такое же наполнение мягкого слоя, как и более дорогие модели.</p>
+          <p><i>ППУ</i> -мягкий, эластичный наполнитель, выдерживает большую нагрузку и  создает основу для комфортного сна, <i>струттофайбер (2,5 см)</i> – очень упругий материал средней степени жесткости.</p>
+          <p>Благодаря двум сторнам различной степени жесткости, вы всегда будете иметь крепкий и здоровый сон.</p>
+          <p>Матрасы на зависимых пружинах – это хорошее решение проблем сна при небольших финансовых затратах.</p>
+          <p><strong>Гарантия </strong>производителя<strong>  3 года</strong></p>
+          <p><strong>Срок службы </strong>матраса при соблюдении правил эксплуатации  не менее<strong> 10 лет</strong></p>
+          <p class="block__title show-table">Технические характеристики Andersen Комфорт 90x200 см (CMP011)</p>
+          <table class="sticky-table">
+            <thead class="sticky-thead">
+              <tr class="sticky-tr">
+                <th class="sticky-th">Характеристики</th>
+                <th class="sticky-th">Описание</th>
+              </tr>
+            </thead>
+            <tbody class="sticky-tbody">
+              <tr class="sticky-tr">
+                <td class="sticky-td">Жесткость второй стороны</td>
+                <td class="sticky-td">Мягкий</td>
+              </tr>
+              <tr class="sticky-tr">
+                <td class="sticky-td">Высота</td>
+                <td class="sticky-td">22 см</td>
+              </tr>
+              <tr class="sticky-tr">
+                <td class="sticky-td">Максимальная нагрузка</td>
+                <td class="sticky-td">Вес до 90 кг</td>
+              </tr>
+              <tr class="sticky-tr">
+                <td class="sticky-td">Конструкция</td>
+                <td class="sticky-td">Несимметричный</td>
+              </tr>
+              <tr class="sticky-tr">
+                <td class="sticky-td">Тип матраса</td>
+                <td class="sticky-td">С пружинами</td>
+              </tr>
+              <tr class="sticky-tr">
+                <td class="sticky-td">Наполнитель</td>
+                <td class="sticky-td">Мемори</td>
+              </tr>
+              <tr class="sticky-tr">
+                <td class="sticky-td">Наполнитель</td>
+                <td class="sticky-td">Кокос</td>
+              </tr>
+              <tr class="sticky-tr">
+                <td class="sticky-td">Плотность</td>
+                <td class="sticky-td">280 пружин /м²</td>
+              </tr>
+              <tr class="sticky-tr">
+                <td class="sticky-td">Чехол</td>
+                <td class="sticky-td">Несъемный чехол из поликатоновой ткани, простеганный синтепоном</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="separator-left"></div>
+        <div class="review-card">
+          <p class="review-card__title">Отзывы</p>
+          <div>
+            <form id="form_reviews" action="" novalidate="" class="form__reviews">
+              <p class="error"><font class="errortext">             </font></p>
+              <input type="hidden"/>
+              <div class="form__rating"><span class="label label_reviews">Рейтинг товара</span>
+                <div class="get-rate">          </div>
+              </div>
+              <table class="kff-tab-form">
+                <tbody>
+                  <tr>
+                    <td class="kff-field-label label_reviews">
+                      <label for="client_name" class="label">Ваше Имя</label><span class="kff-req">*</span>
+                    </td>
+                    <td class="kff-name input_reviews">
+                      <input type="text" name="f_name" pattern="[А-Яа-яЁёa-zA-Z`s]{1,100}" maxlength="100" placeholder="Пример: Вдадимир Владимирович" required="" class="input"/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="kff-field-label label_reviews">
+                      <label for="client_adress" class="label">Ваш отзыв</label><span class="kff-req">*</span>
+                    </td>
+                    <td class="kff-text input_reviews">
+                      <textarea name="f_text" rows="4" pattern="[А-Яа-яЁёa-zA-Z`s]{1,256}" maxlength="256" placeholder="Пример: Отличный и качественный матрас" required="" class="input input input_reviews_ta"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" align="right">
+                      <input type="hidden"/>
+                      <input type="submit" name="submit" value="Оставить отзыв" class="btn__green btn__green_form-reviews"/>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
+          <div class="comment__wrap">
+            <div class="comment comment_autor comment_autor_card">
+              <p class="comment__text comment__text_autor">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+              <div class="comment__name comment__name_autor">Юрий Белов</div>
+            </div>
+            <div class="comment comment_manager comment_manager_card">
+              <p class="comment__text comment__text_manager">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+              <div class="comment__name comment__name_manager">Менеджер Юрий</div>
+            </div>
+            <div class="comment__watch"><a href="#" class="btn__orange btn__orange_review-card">Смотреть >></a></div>
+          </div>
+        </div>
+        <div class="block-info clearfix">
+          <h2>Матрас с «правильным» эффектом</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        </div>
+      </div>
+      <!-- end left-container-->
+    </div>
+    <!-- end container-int-->
+    <!-- begin popUp order-->
+    <div data-type="order" class="popUp popUp_order">
+      <div class="popUp__modal">
+        <div class="popUp__window popUp__window_order">
+          <div class="order">
+            <div class="order__one-click"><a id="orderClick" href="#" class="btn__green btn__green_one-click">Заказать в 1 клик</a></div>
+            <div class="order__add-basket"><a id="addBasket" href="javascript:void(0)" class="btn__blue btn__blue_add-basket">Добавить в корзину</a></div>
+          </div>
+          <div class="product-add">
+            <p class="product-add__title">Товар добавлен в корзину</p>
+            <div class="order__product-add"><a href="/cart" class="btn__green btn__green_product-add">Перейти в корзину</a></div>
+            <div class="order__shopping"><a id="shopping" href="/" class="btn__blue btn__blue_shopping">Продолжить покупки</a></div>
+          </div>
+          <div class="popUp__window__close"><i class="fa fa-times fa-2x"></i></div>
+        </div>
+      </div>
+    </div>
+    <!-- end popUp order-->
+    <!-- begin popUp comment-->
+    <div data-type="comment" class="popUp popUp_comment">
+      <div class="popUp__modal">
+        <div class="popUp__window popUp__window_comment">
+          <p class="message message_comment">Спасибо, ваш комментарий принят!</p>
+          <div class="popUp__window__close"><i class="fa fa-times fa-2x"></i></div>
+        </div>
+      </div>
+    </div>
+    <!-- end popUp comment-->
+    <!-- begin popUp quick-->
+    <div data-type="quick" class="popUp popUp_quick">
+      <div style="display: none;" class="popUp__modal">
+        <div style="display: none;" class="popUp__window popUp__window_quick">
+          <p class="quick__title">Оформление заказа</p>
+          <div class="quick">
+            <div class="quick__prod">
+              <p class="quick__name">Orthosleep Comfort S soft</p>
+            </div>
+            <div class="quick__price">
+              <p class="price-new price-new_economy">8950 Р</p>
+            </div>
+            <div class="quick__form">
+              <div>
+                <form id="form_quick" action="" novalidate="" class="form form__quick">
+                  <p class="error"><font class="errortext"></font></p>
+                  <input type="hidden"/>
+                  <table class="kff-tab-form">
+                    <tbody>
+                      <tr>
+                        <td class="kff-field-label label_quick">
+                          <label for="quick_name" class="label">Ваше Имя</label><span class="kff-req">*</span>
+                        </td>
+                        <td class="kff-name input_quick">
+                          <input type="text" name="f_name" pattern="[А-Яа-яЁёa-zA-Z`s]{1,100}" maxlength="100" placeholder="Пример: Вдадимир Владимирович" required="" class="input"/>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="kff-field-label label_quick">
+                          <label for="quick_phone" class="label">Телефон</label><span class="kff-req">*</span>
+                        </td>
+                        <td class="kff-name input_quick">
+                          <input type="tel" name="f_phone" pattern="[0-9()-s+]{3,20}" maxlength="20" placeholder="Пример: +789 8569 5478 568" required="" class="input"/>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="kff-field-label label_quick">
+                          <label for="quick_email" class="label">E-mail</label>
+                        </td>
+                        <td class="kff-email input_quick">
+                          <input type="email" name="f-email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+.[a-zA-Z.]{2,8}$" maxlength="128" placeholder="пример: test@mail.ru" class="input"/>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="kff-field-label label_quick">
+                          <label for="quick_adress" class="label">Адрес</label>
+                        </td>
+                        <td class="kff-text input_quick">
+                          <textarea name="f-text" rows="3" pattern="[А-Яа-яЁёa-zA-Z`s]{1,100}" maxlength="100" placeholder="Пример: 101000, г.Москва, ул.Бочкова, д.8, кв.11" class="input input_quick_ta"></textarea>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" align="right">
+                          <input type="hidden"/>
+                          <input type="submit" name="submit" value="Заказать" class="btn__green btn__green_quick"/>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
+              </div>
+            </div>
+          </div>
+          <p class="message">Спасибо, ваш заказ находится<br/>на рассмотрении у менеджера.</p>
+          <p class="message">С вами обязательно свяжутся<br/>в ближайшее время</p>
+          <div class="popUp__window__close"><i class="fa fa-times fa-2x"></i></div>
+        </div>
+      </div>
+    </div>
+    <!-- end popUp quick-->
+    <!-- begin container_banner-->
+    <div class="container container_banner"><a href="/magazin"><img src="img/banner.jpg" alt=""/></a></div>
+    <!-- end container_banner-->
+    <!-- begin container_f-->
+    <footer class="container container_f">
+      <!-- begin footer-->
+      <div class="footer">
+        <div class="footer__contacts">
+          <div class="logo logo_f"><a href="#" class="logo__link"><img src="img/logo.png" alt=""/></a></div>
+          <div class="contacts contacts_f _d-ib"><span>+7 (495) 558-61-63<br/>info@osleep.ru</span></div>
+          <div class="share"><a href="http://vk.com/orthosleep" target="_blank"><img src="img/vk.png" alt=""/></a><a href="https://www.facebook.com/107337676295040/" target="_blank"><img src="img/fb.png" alt=""/></a><a href="http://ok.ru/group/53716697612541" target="_blank"><img src="img/ok.png" alt=""/></a></div>
+        </div>
+        <ul class="prod-ul _d-ib _f-margin">
+          <p class="prod-ul__title">Продукция</p>
+          <li class="prod-ul__item"><a href="#" class="prod-ul__link">Матрасы</a></li>
+          <li class="prod-ul__item"><a href="#" class="prod-ul__link">Кровати</a></li>
+          <li class="prod-ul__item"><a href="#" class="prod-ul__link">Наматрасники</a></li>
+          <li class="prod-ul__item"><a href="#" class="prod-ul__link">Основания</a></li>
+          <li class="prod-ul__item"><a href="#" class="prod-ul__link">Подушки</a></li>
+          <li class="prod-ul__item"><a href="#" class="prod-ul__link">Компания</a></li>
+        </ul>
+        <ul class="page-list page-list_1 _d-ib _f-margin">
+          <li class="page-list__item"><a href="#" class="page-list__link">О компании</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">События</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">Связаться с нами</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">Магазины</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">Энциклопедия сна</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">Магазин</a></li>
+        </ul>
+        <ul class="page-list page-list_2 _d-ib _f-margin">
+          <li class="page-list__item"><a href="#" class="page-list__link">О продавце</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">Страница клиента</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">Справочник покупателя</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">Оплата и доставка</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">Склад</a></li>
+          <li class="page-list__item"><a href="#" class="page-list__link">Каталог</a></li>
+        </ul>
+      </div>
+      <!-- end footer-->
+    </footer>
+    <!-- end container_f-->
+    <script src="js/vendor/jquery-1.11.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/jquery.raty.js"></script>
+    <script src="js/jquery.easydropdown.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.liquidcarousel.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

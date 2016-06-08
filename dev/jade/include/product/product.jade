@@ -1,0 +1,56 @@
+mixin product(o)
+    // begin container-int
+    .container.container-int
+      // begin left-container
+      .left-container
+        // begin breadcrumb
+        +bx-breadcrumb()
+        // end breadcrumb
+        h1 Матрасы от производителя OrthoSleep
+        // begin product
+        .product
+          .block-info.clearfix
+            .catalog-ul-head
+              ul.catalog-ul
+                li.catalog-ul__item
+                  a.catalog-ul__link(href='http://osleep.ru/section/matrasy/dvuspalnye_matrasy') Двуспальные матрасы
+                li.catalog-ul__item
+                  a.catalog-ul__link(href='http://osleep.ru/section/matrasy/odnospalnye_matrasy') Односпальные матрасы
+                li.catalog-ul__item
+                  a.catalog-ul__link(href='http://osleep.ru/section/matrasy/polutorospalnye_matrasy') Полутороспальные матрасы
+                li.catalog-ul__item
+                  a.catalog-ul__link(href='http://osleep.ru/section/matrasy/kokosovye_matrasy') Кокосовые матрасы
+                li.catalog-ul__item
+                  a.catalog-ul__link(href='http://osleep.ru/section/matrasy/lateksnye_matrasy') Латексные матрасы
+                li.catalog-ul__item
+                  a.catalog-ul__link(href='http://osleep.ru/section/matrasy/porolonovye_matrasy') Поролоновые матрасы
+                li.catalog-ul__item
+                  a.catalog-ul__link(href='http://osleep.ru/section/matrasy/tonkie_matrasy') Тонкие матрасы
+                li.catalog-ul__item
+                  a.catalog-ul__link(href='http://osleep.ru/section/matrasy/gipoallergennye_matrasy') Гипоаллергенные матрасы
+              .catalog__head
+                p
+                  | В интернет-магазине OrthoSleep в Москве – огромный ассортимент хороших спальных матрасов для всей семьи. Они продаются по доступным ценам, поскольку компания OrthoSleep является их эксклюзивным производителем. С нашими матрасами ваш сон будет спокойным, приятным и здоровым!        
+          .product-group__wrap
+            .sort(data-page='matrasy', data-section='')
+              .sort__title Сортировать по: 
+              .sort-wrap
+                a.sort__item._price(href='javascript:void(0);', data-sort='ItemSize.price')
+                  span.sort__desc Цене
+                  i.sort__icon
+                a.sort__item._name(href='javascript:void(0);', data-sort='Item.name')
+                  span.sort__desc Названию
+                  i.sort__icon
+                a.sort__item._reset(href='javascript:void(0);', data-sort='')
+                  span.sort__desc._act Сброс фильтра
+            .product-group
+              - for (var y = 0; y < 6; y++)
+                +prod-list('prod-list_product')
+        // end product
+        .block-info.clearfix
+          h2 Производство Матрасов
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+         
+      // end left-container
+    // end container-int

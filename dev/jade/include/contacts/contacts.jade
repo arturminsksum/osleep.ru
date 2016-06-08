@@ -1,0 +1,130 @@
+mixin contacts(o)
+    // begin container-int
+    .container.container-int
+      // begin left-container
+      .left-container
+        // begin breadcrumb
+        +bx-breadcrumb()
+        // end breadcrumb
+        h1 Контакты интернет-магазина:
+        // begin b_contact
+        .b_contact
+          p.b_contact__title Выставочный зал в ТЦ "Roomer" на Автозаводской
+          .b_contact__wrap-info
+            .b_contact__info
+              .b_contact__item
+                .b_contact__icon
+                  .fa.fa-map-marker  
+                .b_contact__name Адрес магазина:
+                .b_contact__text
+                  | г. Москва, м. Автозаводская, ул. Ленинская Слобода, 26, 2 - этаж, №240 - конец зала (матрасная секция)
+              .b_contact__item
+                .b_contact__icon
+                  .fa.fa-phone  
+                .b_contact__name Телефоны:
+                .b_contact__text 7 (495) 558-61-63
+            .b_contact__info
+              .b_contact__item
+                .b_contact__icon
+                  .fa.fa-clock-o  
+                .b_contact__name График работы:
+                .b_contact__text.b_contact__text_time 10.00-22.00
+                .b_contact__text_sub Ежедневно
+          .b_contact__map
+            script(type='text/javascript', charset='utf-8', src='https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=_lBxUZG2pA8kzExKwG1bzDOUWVwY-eSz&width=100%&height=450')
+        // end b_contact
+        // begin b_contact
+        .b_contact
+          .b_contact__title Выставочный зал у м. Семеновская или м. Шоссе Энтузиастов
+          .b_contact__wrap-info
+            .b_contact__info
+              .b_contact__item
+                .b_contact__icon
+                  .fa.fa-map-marker  
+                .b_contact__name Адрес магазина:
+                .b_contact__text 105118, РФ, г. Москва, ул. Буракова, д. 6 А
+              .b_contact__item
+                .b_contact__icon
+                  .fa.fa-phone  
+                .b_contact__name Телефоны:
+                .b_contact__text 7 (495) 558-61-63
+                .b_contact__text 7 (499) 550-1-550
+            .b_contact__info
+              .b_contact__item
+                .b_contact__icon
+                  .fa.fa-clock-o  
+                .b_contact__name График работы:
+                .b_contact__text_sub Будние дни:
+                .b_contact__text.b_contact__text_time 10.00-20.00
+                .b_contact__text_sub Выходные:
+                .b_contact__text.b_contact__text_time 10.00-18.00
+        // end b_contact
+        // begin b_contact
+        .b_contact
+          .b_contact__title OrthoSleep в ТЦ Синдика
+          .b_contact__wrap-info
+            .b_contact__info
+              .b_contact__item
+                .b_contact__icon
+                  .fa.fa-map-marker  
+                .b_contact__name Адрес магазина:
+                .b_contact__text
+                  | Московская область, Одинцовский р-н, дер. Раздоры, МКАД 65км, 2 этаж, Подиум OrhoSleep
+              .b_contact__item
+                .b_contact__icon
+                  .fa.fa-phone  
+                .b_contact__name Телефоны:
+                .b_contact__text 7 (495) 558-61-63
+            .b_contact__info
+              .b_contact__item
+                .b_contact__icon
+                  .fa.fa-clock-o  
+                .b_contact__name График работы:
+                .b_contact__text.b_contact__text_time 10.00-21.00
+                .b_contact__text_sub Ежедневно
+        // end b_contact
+        // begin b_contact
+        .b_contact
+          .b_contact__title Салон в ТЦ Румянцево
+          .b_contact__wrap-info
+            .b_contact__info
+              .b_contact__item
+                .b_contact__icon
+                  .fa.fa-map-marker  
+                .b_contact__name Адрес магазина:
+                .b_contact__text
+                  | 500м от МКАД по Киевскому шоссе, Бизнес парк "Румянцево", корпус А, 3-й вход, 2 этаж, линия С-7
+              .b_contact__item
+                .b_contact__icon
+                  .fa.fa-phone  
+                .b_contact__name Телефоны:
+                .b_contact__text 7 (495) 558-61-63
+              .b_contact__item
+                .b_contact__icon.b_contact__icon_envelope
+                  .fa.fa-envelope  
+                .b_contact__name E-mail:
+                .b_contact__text info@orthosleep.ru
+            .b_contact__info
+              .b_contact__item
+                .b_contact__icon
+                  .fa.fa-clock-o  
+                .b_contact__name График работы:
+                .b_contact__text.b_contact__text_time 10.00-21.00
+                .b_contact__text_sub Ежедневно
+              .b_contact__item
+                .b_contact__icon.b_contact__icon_word
+                  .fa.fa-file-word-o  
+                .b_contact__name Юридические реквизиты:
+                .b_contact__text_legal г. Москва, ул. Октябрьская, 13,
+                .b_contact__text_legal оф 306
+                .b_contact__text_legal р/c 456567678678
+                .b_contact__text_legal ОАО "Сбербанк России", код 456
+                .b_contact__text_legal УНН 896567898
+        // begin contacts-form
+        +contacts-form()
+        // end contacts-form
+        .letter(style='display: none;')
+          p.letter__title Ваш вопрос отправлен администратору.
+          p.letter__title Спасибо!      
+      // end left-container
+    // end container-int

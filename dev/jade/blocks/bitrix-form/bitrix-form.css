@@ -1,0 +1,92 @@
+.kff {
+	&-tab-form {
+		input[type="submit"] {
+			margin: 20px 0;
+		}
+
+	}
+
+	&-req {
+		display: inline-block;
+		padding-top: 10px;
+		color: #007fac;
+
+		@media (max-width:1239px) {
+			font-size: 14px;
+			padding-top: 7px;
+		}
+
+	}
+
+	&-field-label {
+		vertical-align: top;
+	}
+
+	&-name {
+	}
+
+	&-phone {
+	}
+
+	&-email {
+	}
+
+	&-text {
+	}
+
+	&-cwrap {
+		display: inline-block;
+	}
+
+	&-ctext {
+		display: inline-block;
+		font-size: 18px;
+		color: #575757;
+		margin-right: 5px;
+
+		.kff-req {
+			color: #575757;
+		}
+
+		& ~ input[name="captcha_word"] {
+			width: 140px;
+		}
+
+		@media (max-width:1239px) {
+			font-size: 16px;
+		}
+
+		@media (max-width:767px) {
+			width: 120px;
+			font-size: 14px;
+
+			& ~ img {
+				width: 170px;
+				height: auto;
+				margin-bottom: 7px;
+			}
+
+		}
+
+	}
+
+}
+
+.error {
+	margin-bottom: 10px;
+	&text {
+		font-size: 16px;
+		color: #ff0101;
+
+		@media (max-width:1239px) {
+			font-size: 14px;
+		}
+
+		@media (max-width:767px) {
+			font-size: 12px;
+		}
+
+	}
+
+}
+

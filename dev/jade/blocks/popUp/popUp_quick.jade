@@ -1,0 +1,56 @@
+mixin popUp_quick(o)    
+  // begin popUp quick
+  .popUp.popUp_quick(data-type='quick')
+    .popUp__modal(style='display: none;')
+      .popUp__window.popUp__window_quick(style='display: none;')
+        p.quick__title Оформление заказа
+        .quick
+          .quick__prod
+            p.quick__name Orthosleep Comfort S soft
+          .quick__price
+            p.price-new.price-new_economy 8950 Р
+          .quick__form
+            div
+              form#form_quick.form.form__quick(action='', novalidate='')
+                p.error
+                  font.errortext
+                input(type='hidden')
+                table.kff-tab-form
+                  tbody
+                    tr
+                      td.kff-field-label.label_quick
+                        label.label(for='quick_name') Ваше Имя
+                        span.kff-req *
+                      td.kff-name.input_quick
+                        input.input(type='text', name='f_name', pattern='[А-Яа-яЁёa-zA-Z`\s]{1,100}', maxlength='100', placeholder='Пример: Вдадимир Владимирович', required='')
+                    tr
+                      td.kff-field-label.label_quick
+                        label.label(for='quick_phone') Телефон
+                        span.kff-req *
+                      td.kff-name.input_quick
+                        input.input(type='tel', name='f_phone', pattern='[0-9()-\s+]{3,20}', maxlength='20', placeholder='Пример: +789 8569 5478 568', required='')
+                    tr
+                      td.kff-field-label.label_quick
+                        label.label(for='quick_email') E-mail
+                      td.kff-email.input_quick
+                        input.input(type='email', name='f-email', pattern='^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z.]{2,8}$', maxlength='128', placeholder='пример: test@mail.ru')  
+                    tr
+                      td.kff-field-label.label_quick
+                        label.label(for='quick_adress') Адрес
+                      td.kff-text.input_quick
+                        textarea.input.input_quick_ta(name='f-text', rows='3', pattern='[А-Яа-яЁёa-zA-Z`\s]{1,100}', maxlength='100', placeholder='Пример: 101000, г.Москва, ул.Бочкова, д.8, кв.11')
+                    tr
+                      td(colspan='2', align='right')
+                        input(type='hidden')
+                        input.btn__green.btn__green_quick(type='submit', name='submit', value='Заказать')
+        p.message
+          | Спасибо, ваш заказ находится
+          br
+          | на рассмотрении у менеджера.
+        p.message
+          | С вами обязательно свяжутся
+          br
+          | в ближайшее время
+        .popUp__window__close
+          i.fa.fa-times.fa-2x
+  // end popUp quick

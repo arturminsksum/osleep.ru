@@ -1,0 +1,19 @@
+{
+  "name": "pinskdrev",
+  "description": "default folder structure",
+  "version": "0.1.0",
+  "author": "Artur",
+  "repository": "",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-connect-multi": "^1.0.8",
+    "gulp-cssnano": "^1.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-postcss": "^5.1.10",
+    "gulp-util": "^3.0.6",
+    "postcss-import": "^6.2.0",
+    "postcss-nested": "^0.3.2",
+    "postcss-simple-vars": "^0.3.0"
+  }
+}

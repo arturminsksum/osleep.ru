@@ -1,0 +1,152 @@
+mixin header(o)
+    // begin container-h
+    header.container.container-h
+      .h-mobile
+        .h-mobile__toggle
+          .h-mobile__btn
+            i.fa.fa-bars
+          p.h-mobile__title Меню
+      .header
+        .logo
+          a.logo__link(href='#')
+            img(src='img/logo.png', alt='')
+        .contacts
+          .contacts__email info@osleep.ru
+          .contacts__phone +7 (495) 558-61-63
+        .basket
+          a.btn__blue.btn__blue_basket.full(href='#')
+            i.fa.fa-shopping-cart
+            p.basket__text
+              span Корзина
+              | : 2
+        .h-way
+          a.btn__blue.btn__way(href='#')
+            i.fa.fa-map-marker
+            span Как добраться
+      // end header
+      // begin top-menu
+      ul.top-menu.cl-effect-15
+        li.top-menu__item
+          a.top-menu__link.active(href='#', data-hover='Главная') Главная
+        li.top-menu__item
+          a.top-menu__link(href='#', data-hover='Матрасы') Матрасы
+          .drop-wrap
+            a.drop-wrap__link(href='#')
+              img(src='img/slide-1.png', alt='')
+            p.sub-menu-2__best Лучший товар раздела
+            a(href='#')
+              p.sub-menu-2__prod Матрас Original 2
+            a.btn__blue.btn_sub-menu(href='#') Перейти к товару
+            ul.sub-menu-1
+              li.sub-menu__item
+                a.sub-menu__link(href='#') С ортопедическим основанием
+                .sub-menu-wrap
+                  ul.sub-menu-2
+                    li.sub-menu__item
+                      a.sub-menu__link(href='#') Детские1
+                    li.sub-menu__item
+                      a.sub-menu__link(href='#') Детские2
+                    li.sub-menu__item
+                      a.sub-menu__link(href='#') Детские3
+                  a.sub-menu-2__link(href='')
+                    img(src='img/slide-1.png', alt='')
+                  p.sub-menu-2__best Лучший товар раздела
+                  a(href='')
+                    p.sub-menu-2__prod Матрас Original 2
+                  a.btn__blue.btn_sub-menu(href='#') Перейти к товару
+              li.sub-menu__item
+                a.sub-menu__link(href='#') Средние 2
+                .sub-menu-wrap
+                  ul.sub-menu-2
+                    li.sub-menu__item
+                      a.sub-menu__link(href='#') Женские1
+                    li.sub-menu__item
+                      a.sub-menu__link(href='#') Женские2
+                    li.sub-menu__item
+                      a.sub-menu__link(href='#') Женские3
+                  a.sub-menu-2__link(href='')
+                    img(src='img/our-production.png', alt='')
+                  p.sub-menu-2__best Лучший товар раздела
+                  a(href='')
+                    p.sub-menu-2__prod Матрас 333
+                  a.btn__blue.btn_sub-menu(href='#') к товару
+        li.top-menu__item
+          a.top-menu__link(href='#', data-hover='Кровати') Кровати
+        li.top-menu__item
+          a.top-menu__link(href='#', data-hover='Аксессуары') Аксессуары
+        li.top-menu__item
+          a.top-menu__link(href='#', data-hover='Акции') Акции
+        li.top-menu__item
+          a.top-menu__link(href='#', data-hover='Дилерам') Дилерам
+        li.top-menu__item
+          a.top-menu__link(href='#', data-hover='Покупателям') Покупателям
+        li.top-menu__item
+          a.top-menu__link(href='#', data-hover='Контакты') Контакты
+      // end top-menu
+      // begin form-filter
+      aside.form-filter
+        form#filter(action='#')
+          p.form-filter__title Подобрать матрас
+          .form-filter__wrap
+            .form-filter__item
+              p.form-filter__category Размер
+              select.form-filter__multi.dropdown.scrollable(name='', id='')
+                option(value='', selected='selected') Не важно
+                option(value='') 1800x900
+                option(value='') 1900x1200
+                option(value='') 2000x1500
+            .form-filter__item
+              p.form-filter__category Жесткость
+              select.form-filter__multi.dropdown(name='', id='')
+                option(value='', selected='selected') Не важно
+                option(value='') Жесткие
+                option(value='') Универсальные
+                option(value='') Мягкие
+            .form-filter__item.form-filter__item_hidden.price-check
+              p.form-filter__category Диапазон цен
+              .checkbox
+                input#h15.checkbox__input(name='range', type='checkbox', value='', data-chmin='5000', data-chmax='10000')
+                label.checkbox__label(for='h15')
+                  | от 5000 до 10000
+                  span.checkbox__label_check
+              .checkbox
+                input#h16.checkbox__input(name='range', type='checkbox', value='', data-chmin='10000', data-chmax='20000')
+                label.checkbox__label(for='h16')
+                  | от 10000 до 20000
+                  span.checkbox__label_check
+              .checkbox
+                input#h17.checkbox__input(name='range', type='checkbox', value='', data-chmin='20000', data-chmax='30000')
+                label.checkbox__label(for='h17')
+                  | от 20000 до 30000
+                  span.checkbox__label_check
+              .checkbox
+                input#h18.checkbox__input(name='range', type='checkbox', value='', data-chmin='30000', data-chmax='40000')
+                label.checkbox__label(for='h18')
+                  | от 30000 до 40000
+                  span.checkbox__label_check
+              .checkbox
+                input#h20.checkbox__input(name='range', type='checkbox', value='', data-chmin='40000', data-chmax='100000')
+                label.checkbox__label(for='h20')
+                  | от 40000 и выше
+                  span.checkbox__label_check
+            .form-filter__item.form-filter__item_hidden
+              p.form-filter__category Стоимость
+              #slider-snap.slider-range
+              .slider-range__min-max
+                .slider-range__value
+                  span от 
+                  span#slider-snap-value-lower
+                  span  руб
+                .slider-range__value
+                  span до 
+                  span#slider-snap-value-upper
+                  span  руб
+                input#input-number-lower(value='0', style='display:none')
+                input#input-number-upper(value='100000', style='display:none')
+          p.form-filter__more Дополнительные параметры
+          .btn-wrap
+            button.btn__orange.btn__orange_filter(type='submit') Подобрать
+      // end form-filter
+    // end container-h
+
+    

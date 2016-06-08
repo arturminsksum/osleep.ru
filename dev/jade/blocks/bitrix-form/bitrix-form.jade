@@ -1,0 +1,92 @@
+mixin kff-name(req)
+  tr
+    td.kff-field-label.label_client
+      label.label(for='client_name') Ваше Имя
+      if req
+        span.kff-req *
+    td.kff-name.input_client
+      input.input(type='text', name='f_name', pattern='[А-Яа-яЁёa-zA-Z`\s]{1,100}', maxlength='100', placeholder='Пример: Вдадимир Владимирович', required='')  
+
+mixin kff-phone(req)
+  tr
+    td.kff-field-label.label_client
+      label.label(for='client_phone') Телефон
+      if req
+        span.kff-req *
+    td.kff-name.input_client
+      input.input(type='tel', name='f_phone', pattern='[0-9()-\s+]{3,20}', maxlength='20', placeholder='Пример: +789 8569 5478 568', required='')
+
+mixin kff-email(req)
+  tr
+    td.kff-field-label.label_client
+      label.label(for='client_email') E-mail
+      if req
+        span.kff-req *
+    td.kff-email.input_client
+      input.input(type='email', name='form[user_email]', pattern='^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+\.[a-zA-Z.]{2,8}$', maxlength='128', placeholder='пример: test@mail.ru')  
+
+mixin kff-text(row,label,req)
+  - var rows = (typeof row === 'undefined') ? '' : row
+  tr
+    td.kff-field-label.label_client
+      label.label(for='client_adress') #{label}
+      if req
+        span.kff-req *
+    td.kff-text.input_client
+      textarea.input.input_client_ta(name='form[user_adress]', rows=rows, pattern='[А-Яа-яЁёa-zA-Z`\s]{1,100}', maxlength='100', placeholder='Пример: 101000, г.Москва, ул.Бочкова, д.8, кв.11')
+
+mixin kff-ctext(req)
+    tr
+      td(colspan='2')
+        .kff-cwrap
+          .kff-ctext Защита от СПАМа
+          input(type='hidden', name='captcha_sid', value='0038b14be99cab274b94c8717b0d1b76')
+          img(src='', width='180', height='40', alt='CAPTCHA')
+        .kff-cwrap    
+          .kff-ctext
+            | Введите текст
+            span.kff-req *
+          input.input(type='text', name='captcha_word', size='30', maxlength='50', value='')
+
+mixin kff-submit(align,val,req)
+  - var align = (typeof align === 'undefined') ? '' : align
+  - var val = (typeof val === 'undefined') ? '' : val
+  tr
+    td(colspan='2', align=align)
+      input(type='hidden')
+      input.btn__green.btn__green_form-client(type='submit', name='submit', value=val)
+
+mixin cart-form(o)
+  .client-form
+    p.client-form__title Данные о покупателе
+    div
+      form#form_cart.form.form__cart(action='', novalidate)
+        p.error
+          font.errortext        
+        input(type='hidden')
+        table.kff-tab-form
+          tbody
+            +kff-name(true)
+            +kff-phone(true)
+            +kff-text(2,'Адрес доставки')
+            +kff-email()
+            +kff-text(5,'Комментарий')
+            +kff-ctext()
+            +kff-submit('right','Оформить заказ')
+
+mixin contacts-form(o)
+  .client-form
+    p.client-form__title Данные о покупателе
+    div
+      form#form_contacts.form.form__contacts(action='', novalidate)
+        p.error
+          font.errortext        
+        input(type='hidden')
+        table.kff-tab-form
+          tbody
+            +kff-name(true)
+            +kff-phone(true)
+            +kff-email()
+            +kff-text(5,'Комментарий')
+            +kff-ctext()
+            +kff-submit('right','Отправить вопрос')
